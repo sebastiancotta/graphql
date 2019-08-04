@@ -4,7 +4,7 @@ const Clientes = new Operations('cliente')
 
 module.exports = app => {
   app.get('/clientes', (req, res) => {
-    Clientes.lista(res)
+    return Clientes.lista()
   })
 
   app.get('/clientes/cliente/:id', (req, res) => {
